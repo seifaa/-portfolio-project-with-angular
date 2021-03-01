@@ -1,0 +1,35 @@
+<h1>userName:{{username}}</h1>
+<button (click)="welcome()" class="btn btn-danger"> welcome my client</button>
+<!-- part1 -->
+<input type="text" class="form-control" [(ngModel)]="x">
+<h class="mt-5">x:{{x}}</h>
+
+
+<!-- part 2 -->
+
+<button (click)="isToggle()" class="btn btn-block btn-outline-primary mt-5" > show table</button>
+<table *ngIf="show" class="table w-75 mt-5">
+<thead>
+    <td>index</td>
+    <td>name</td>
+
+    <td>age</td>
+
+    <td>gender</td>
+
+    <td>birthdate</td>
+
+
+</thead>
+<tbody>
+    <tr *ngFor ="let user of users ; let x = index" >
+
+<td>{{x}}</td>
+<td>{{user.name}}</td>
+<td>{{user.age}}</td>
+<td>{{user.gender}}</td>
+<td>{{user.birthdate}}</td>
+
+    </tr>
+</tbody>
+</table>

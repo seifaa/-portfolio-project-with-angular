@@ -1,0 +1,20 @@
+.divider-custom-icon{
+
+    width: 40px;
+}
+.divider-custom-line{
+
+    width: 130px;
+    height: 3px;
+background-color: white; 
+
+}
+h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#about {
+    background-color: #1abc9c !important;
+
+}
